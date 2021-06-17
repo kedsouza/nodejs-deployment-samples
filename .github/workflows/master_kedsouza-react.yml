@@ -11,6 +11,8 @@ on:
 
 jobs:
   build:
+    env: 
+      working-directory: ./React/my-app
     runs-on: ubuntu-latest
 
     steps:
