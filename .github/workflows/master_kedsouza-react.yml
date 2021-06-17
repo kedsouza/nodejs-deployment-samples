@@ -11,11 +11,10 @@ on:
 
 jobs:
   build:
-    env: 
-      working-directory: ./React/my-app
     runs-on: ubuntu-latest
 
     steps:
+    - working-directory: ./React/my-app
     - uses: actions/checkout@v2
 
     - name: Set up Node.js version
